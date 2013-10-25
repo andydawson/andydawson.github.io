@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PalEON STEPPS</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+		<link rel="stylesheet" href="aasp_sky.css" id="theme">
+		<link rel="stylesheet" href="pdf.css" id="theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+			        
+			        <section data-background="figures/ne_forest.jpg" style="background: rgba(255,255,255,0.9)">
+				  <h3> Spatio-temporal changes in forest composition inferred from fossil pollen records </h3>
+				  <h4>Andria Dawson\(^{a,b}\), Chris Paciorek\(^a\), Jason McLachlan\(^b\), Simon Goring\(^c\)</h4>
+				  <h6>\(^a\) University of California - Berkeley;<br/> \(^b\) University of Notre Dame; <br/> \(^c\) University of Wisconsin - Madison</h6>
+				  
+				</section>
+				
+				<section>
+				  <h3> Why care about forests of the past? </h3>	  
+				  
+				  <ul style="float: right; width: 45%; font-size: 16pt; padding-top: 2em;">
+				      <li>Terrestrial ecosystem model predictions are uncertain.
+				      <li>Decadal- to centennial-scale processes are poorly constrained by data.
+                                      <li>Assumptions of pre-settlement ecosystem stationarity may not be valid.
+                                      <li>We can: assess, initialize, assimilate, and improve these models with paleodata.
+				  </ul>
+				  <img style="float: left;" src="figures/fried_land_uptake_title.png" class="borderless" alt="Model structure" width="50%" />
+
+			
+				 
+				</section>
+				
+				<section>
+				  <h3> The goal</h3>
+			          <p>To make inference about spatial vegetation distributions for the past \(\sim\)2500 years, using fossil pollen proxy data.</p>
+			          
+			          
+			          <h3 style="margin-top: 2em;">The approach</h3>
+			          <p>Confront the fossil pollen and spatial vegetation data with statistical models to make inference about forest composition and abundance.</p>
+
+				</section>
+				
+				<section>
+				  <h4> The data (Upper Midwest, similar for New England) </h4>
+ 			          
+ 			          <br>
+ 			          <center>
+			          <table>
+			          <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+			          <tr><td>Fossil pollen: </td><td>Public Land Survey: </td></tr>
+			          <tr><td>modern to 2500 y.b.p</td><td>settlement era</td></tr>
+			          <tr><td><img src="figures/pollen_sites_UMW.png" class="borderless" alt="Model structure" width=500></td>
+			          <td><img src="figures/pls_data.png" class="borderless" alt="Model structure" width=580></td></tr>
+			          <tr><td>&nbsp;</td><td style="font-size:20px; text-align:right;">Graphic credits to Simon Goring!</td></tr>
+			          </table>
+			          <br/><br/>
+			     
+                                  </center>
+                                  
+                                  
+				</section>
+
+				<section data-display="The idea">
+				  <h3> The idea </h3>
+				  <img src="figures/stepps1_model_flow.png" class="borderless" alt="Model structure">	
+				</section>
+				
+			        <section>
+				  <h3> Model pictograph </h3>
+				  <img src="figures/model_dag.png" class="borderless" alt="Model dag">
+				</section>
+				
+				<section>
+				  <h3> STEPPS1</h3>
+				  <h3> Central New England</h3>
+				</section>
+				
+			        <section>
+				  <h3> STEPPS1 calibration data </h3>
+				  <img src="figures/data_colonial.png" class="borderless" alt="Model dag" width=1000>
+				  <p><font size="5.5">183 towns, 26-3149 trees per town &nbsp;  &nbsp;  &nbsp; &nbsp; 23 ponds, 500 grains per pond</font></p>
+
+				</section>
+				
+				<section>
+			        <h3>STEPPS1 pollen to veg calibration</h3>
+				  <img src="figures/stepps1_fits.png" class="borderless" alt="hidden puppy" width=800>
+				  
+				  <center>
+				  <table>
+				  <tr><td><font size="5.5" color="red">\(+ = \) raw pollen vs. spatially-smoothed vegetation</font></td></tr>
+				  <tr><td><font size="5.5" color="black">\(\bullet = \) raw pollen vs. model-predicted pollen</font></td></tr>
+			          </table>
+			          </center>
+			          
+				</section>
+
+				<section>
+				  <h3> STEPPS1 inferred vegetation </h3>
+				  <img src="figures/stepps1_vegmap.png" class="borderless" alt="Model dag">
+				</section>
+				
+				<section>
+			        <h3>STEPPS1 pollen diagrams</h3>
+				  <img src="figures/stepps1_pollen_diagram.png" class="borderless" alt="hidden puppy" width=800>
+				  
+				  <center>
+				  <table>
+				  <tr><td><font size="5.5" color="blue">\(--- \)</font></td> <td><font size="5.5" color="blue">raw pollen proportions</font></td></tr>
+				  <tr><td><font size="5.5" color="black">\(-\bullet- \)</font> </td> <td><font size="5.5" color="black">model-estimated vegetation proportions</font></td></tr>
+				  <tr><td><font size="5.5" color="red">\(--- \)</font></td> <td> <font size="5.5" color="red">uncertainty estimates</font></td></tr>
+			          </table>
+			          </center>
+			          
+				</section>
+				
+				<section>
+				  <h3> STEPPS2</h3>
+				  <h3> Upper Midwest</h3>
+				</section>
+				
+				<section>
+				  <h4> STEPPS2 calibration data </h4>
+				  
+				  <img src="figures/pie_plot_pls_UMW.png" class="borderless" alt="PLS pie plot" width=2200>
+				  <p><font size="5.5">aggregated to 8 km square grid cells, >3000 cells; \(\sim\) 90 trees sampled per cell</font></p>
+				  
+				  <!--<center>
+				  <table>
+				  <tr><td><img src="figures/pie_plot_pls_UMW.png" class="borderless" alt="PLS pie plot" width=2500></td></tr>
+				  <tr><td><img src="figures/pie_plot_pollen_UMW.png" class="borderless" alt="Pollen pie plot" width=1200></td></tr>
+			          </table>
+			          </center>-->
+
+				</section>
+				
+				<section>
+				  <h4> STEPPS2 calibration data </h4>
+				  
+				  <img src="figures/pie_plot_pollen_UMW.png" class="borderless" alt="PLS pie plot" width=2200>
+				  <p><font size="5.5">131 ponds, more to come; cores span different time intervals</font></p>
+				  
+				  <!--<center>
+				  <table>
+				  <tr><td><img src="figures/pie_plot_pls_UMW.png" class="borderless" alt="PLS pie plot" width=2500></td></tr>
+				  <tr><td><img src="figures/pie_plot_pollen_UMW.png" class="borderless" alt="Pollen pie plot" width=1200></td></tr>
+			          </table>
+			          </center>-->
+
+				</section>
+				
+				<section>
+				  <h3> STEPPS2 vegetation fit</h3>
+				  
+				  <br>
+				  <p>Oak</p>
+				  <img src="figures/comp_results_oak_subset.png" class="borderless" alt="Calibration vegetation fit" width=1000>
+				  <p>Data &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; Model</p>
+				</section>
+				
+				<section>
+			        <h3>STEPPS2 pollen to veg calibration</h3>
+				  <img src="figures/stepps2_fit_plot.png" class="borderless" alt="hidden puppy" width=500>
+				  
+				  <center>
+				  <table>
+				  <tr><td><font size="5.5" color="red">\(+ = \) raw pollen vs. spatially-smoothed vegetation</font></td></tr>
+				  <tr><td><font size="5.5" color="black">\(\bullet = \) raw pollen vs. model-predicted pollen</font></td></tr>
+			          </table>
+			          </center>
+			          
+				</section>
+
+
+				
+				
+				<section>
+				  <h3> Challenges </h3>
+				  <ul>
+				      <li> Sparse and irregularly spaced data.
+                                      <li> Lack of replication.
+                                      <li> Proxy dating is uncertain.
+				      <li> Calibration data is limited.
+				  </ul>
+				</section>
+				
+				<section>
+				  <h3>Thanks!</h3>
+				  <img src="figures/paleon_overview_fig.jpg" class="borderless" alt="hidden puppy" width=500>
+
+				</section>
+				
+
+		
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.min.js"></script>
+
+
+		<script>
+
+			Reveal.initialize({
+			        center: true,
+				history: true,
+				transition: 'fade',
+
+				math: {
+				        // to use MathJax online:
+					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					
+					// to use MathJax offline:
+					// mathjax: 'http://127.0.0.1:8000/mathjax/MathJax.js',
+					// also need to do:
+					// $ cd ~/Documents/paleon/presentations/AASP2013/reveal
+					// $ python -mSimpleHTTPServer
+					
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				dependencies: [
+					{ src: 'reveal.js/lib/js/classList.js' },
+					{ src: 'reveal.js/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+
+	</body>
+</html>
