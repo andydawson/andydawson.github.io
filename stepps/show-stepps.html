@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>STEPPS forest composition</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  $("select").change(function() {
+    $("select option:selected").each(function() {
+      $("#animation").attr("src", $(this).attr("value") + ".gif");
+    });
+  }).change();
+});
+    </script>
+    <style>
+#content {
+    margin: 40px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1>STEPPS forest composition</h1>
+
+      <div>
+	Select taxa:
+	<select>
+	  <option value="OAK">OAK</option>
+	  <option value="HEMLOCK">HEMLOCK</option>
+	  <option value="SPRUCE">SPRUCE</option>
+	</select>
+      </div>
+
+      <div id="animation-container">
+	<img id="animation" src="OAK.gif"/>
+      </div>
+    </div>
+  </body>
+</html>
+
